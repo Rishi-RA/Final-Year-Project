@@ -15,67 +15,162 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/hero-slider.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/datepicker.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+      
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
+        <style>
+         body 
+         
+         {
+           margin: 0;
+           box-sizing: border-box;
+         }
+         
+        .header
+        {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #3e545b;
+       }
+    
+      .header .nav-items .logo 
+      {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #c4c4c4;
+      text-decoration: none;
+      padding-right: 30px;
+      margin-left: 30px;
+    }
+    
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #3e545b;
+      margin-right: 20px;
+    }
+    
+    .nav-items .titlebar
+    {
+        margin-left: 400px;
+    }
+
+    .nav-items a {
+      color: #c4c4c4;
+      box-shadow: inset 0 0 0 0 #c4c4c4;
+      padding: 0 .25rem;
+      margin: 0 -.25rem;
+      padding: 5px 10px 5px 10px;
+      margin : 15px;
+      transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    }
+    
+    .nav-items a:hover, .nav-items .logo:hover
+    {
+        color:#3e545b;
+        box-shadow: inset 200px 0 0 0 #c4c4c4;
+        border-radius: 5px;
+    }
+    
+    .nav-items a
+    {
+      color: #c4c4c4;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+      text-decoration: none;
+    }
+    
+   
+    .nav-items .logo
+    {
+        padding-right: 500px;
+    }
+    
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 520px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("img/homepic.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .intro h2 {
+      font-family: sans-serif;
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+ 
+.content{
+     position: absolute;
+     top: 170%;
+     left: 50%;
+     z-index: 999;
+     text-align: center;
+     padding: 50px 100px 50px 50px;
+     width: 80%;
+     transform: translate(-50%,-50%);
+     background: rgba(255,255,255,0.04);
+     box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+
+.content header{
+    color: white;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    font-family: 'Montserrat',sans-serif;
+  }
+
+
+
+    
+        </style>
     </head>
     <body>
 
-        <div class="wrap">
-            <header id="header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <button id="primary-nav-button" type="button">Menu</button>
-                           
-                            <nav id="primary-nav" class="dropdown cf">
-                                <ul class="dropdown menu">
-                                    <li><a style="color: blue" href="index.jsp">Home</a></li>
-                                    <li><a href="patientLogin.jsp">Patient</a></li>
-                                    <li><a href="doctorLogin.jsp">Doctor</a></li>
-                                    <li><a href="taLogin.jsp">Trusted Authority</a></li>
-                                    <li><a href="cloudLogin.jsp">Cloud</a></li>
-                                </ul>
+       
+                           <header class="header">
+                            <nav class="nav-items">
+                                
+                                <a href="#" class="logo">
+                                        Logo             </a>
+                                <nav class="titlebar">
+                                    <a href="index.jsp">Home</a>
+                                    <a href="patientLogin.jsp">Patient</a>
+                                    <a href="doctorLogin.jsp">Doctor</a>
+                                    <a href="taLogin.jsp">Trusted Authority</a>
+                                    <a href="cloudLogin.jsp">Cloud</a>
+                                </nav>
+                                
                             </nav><!-- / #primary-nav -->
+                           </header>
+        
+       
+                        <div class="intro">
+                            <h2>Secure Fine-Grained Encrypted Keyword Search for E-Healthcare Cloud</h2>
+         
                         </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-        <section class="banner" id="top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="banner-caption">
-                            <h2>Secure Fine-Grained Encrypted Keyword
-                                Search for E-Healthcare Cloud</h2>
-                            <div class="line-dec"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="our-services" id="services">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-heading">
+       
+                        <div class="content">
                             <h1>ABSTRACT</h1>
-                        </div>
-                    </div> 
-                </div> 
+                       
+                   
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="featured-item">
+                   
                             <p align="justify" style="font-size:19px">
                                 E-Healthcare systems are increasingly popular due to the introduction of wearable healthcare devices and sensors.
                                 Personal health records (PHRs) are collected by these devices and stored in a remote cloud. Due to privacy concern, these records
@@ -90,14 +185,13 @@
                                 malleability attack and demonstrate that some of previous schemes may suffer from such attack.
                             </p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                     </div>
+                
+            
+        
 
         <div class="sub-footer">
             <br><br><br><br>
-            <p>&copy; 2021</p>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
